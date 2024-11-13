@@ -1,0 +1,106 @@
+.close-btn-theme {
+  position: absolute;
+  right: 5%;
+  top: 10%;
+
+  font-size: 4.6rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #222831;
+
+  transition: all 0.5s;
+}
+
+.close-btn-theme:hover {
+  cursor: pointer;
+  transform: translateY(-5%);
+}
+
+.close-btn-theme:active,
+.close-btn-theme:focus {
+  transform: translateY(5%);
+}
+
+.theme {
+  cursor: pointer;
+}
+
+.ThemePopup {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-color: rgb(24, 28, 20, 0.5);
+  backdrop-filter: blur(5px);
+
+  z-index: 999;
+}
+
+.Themes {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 2rem;
+}
+
+.themes-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  background-color: rgb(34, 40, 49, 0.5);
+  padding: 1rem;
+
+  transition: all 0.5s;
+  border-radius: 5%;
+}
+
+.themes-div:hover {
+  cursor: pointer;
+  background-color: rgb(34, 40, 49, 0.7);
+  transform: translateY(-5%);
+}
+
+.themes-div:focus,
+.themes-div:active {
+  background-color: rgb(34, 40, 49, 0.9);
+  transform: translateY(5%);
+}
+
+.themes-div > label {
+  font-size: 1.6rem;
+  color: white;
+}
+
+.themes-div > img {
+  width: 18rem;
+  height: 20rem;
+  object-fit: contain;
+}
+
+.trendyol-logo {
+  object-fit: cover !important;
+}
+
+.Subheading {
+  color: #fff;
+  font-weight: 500;
+
+  position: absolute;
+  bottom: 20%;
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Driblio</title>
+
+    <link
+      rel="shortcut icon"
+      href="images/favicon.png"
+      type="image/x-icon"
+      width="32px"
+    />
+
+    <meta
+      name="description"
+      content="Türk takımlarının kadronu kur web sitesi. Kendi kadronuzu hemen hazırlayın!"
+    />
+
+    <!-- FONTS AND ICONS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/4153ce8dcc.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <link rel="stylesheet" href="css/Popup/TeamPopup.css" />
+    <link rel="stylesheet" href="css/Popup/ThemePopup.css" />
+    <link rel="stylesheet" href="css/Popup/PlayerPopup.css" />
+  </head>
+  <body>
+    <header><h1 class="header">Driblio</h1></header>
+
+    <main>
+      <section class="field">
+        <div class="">
+          <h1 class="Team-Name-Heading">GALATASARAY</h1>
+        </div>
+        <div class="field-and-suits"><%- include('line.ejs') %></div>
+      </section>
+
+      <section class="settings">
+        <div class="team-settings">
+          <div class="team-name-div">
+            <label for="t-name">Kulüp Bilgileri</label>
+            <input
+              type="text"
+              class="team-name"
+              id="t-name"
+              placeholder="Takım Adı"
+            />
+
+            <select class="line-change" name="TeamLine" id="teamLine">
+              <option value="4-3-3">4-3-3</option>
+              <option value="4-4-2">4-4-2</option>
+              <option value="4-4-1-1">4-4-1-1</option>
+              <option value="4-3-1-2">4-3-1-2</option>
+              <option value="4-3-2-1">4-3-2-1</option>
+              <option value="4-2-3-1">4-2-3-1</option>
+              <option value="4-1-3-2">4-1-3-2</option>
+              <option value="3-5-2">3-5-2</option>
+              <option value="3-1-4-2">3-1-4-2</option>
+              <option value="3-2-4-1">3-2-4-1</option>
+              <option value="3-3-3-1">3-3-3-1</option>
+              <option value="3-3-2-2">3-3-2-2</option>
+              <option value="3-4-1-2">3-4-1-2</option>
+              <option value="5-1-3-1">5-1-3-1</option>
+              <option value="5-3-2">5-3-2</option>
+              <option value="5-3-1-1">5-3-1-1</option>
+              <option value="5-4-1">5-4-1</option>
+            </select>
+
+            <input class="btn save" type="button" value="Kaydet" />
+            <input class="btn reset" type="button" value="Yeniden Başla" />
+          </div>
+
+          <div class="team-change">
+            <div class="change-team-div-1">
+              <label for="team-logo" class="team-change-heading">
+                Logoya Tıklayarak Takım Değiştir
+              </label>
+            </div>
+
+            <div class="change-team-div-2">
+              <img
+                class="change-team-logo"
+                id="team-logo"
+                src="/images/teams/GS-Team.png"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="theme">
+          <img
+            class="logo"
+            src="/images/logo/ucl-logo.png"
+            alt="Driblio Şampiyonlar Ligi Teması"
+            id="theme-logo"
+          />
+        </div>
+      </section>
+    </main>
+
+    <!-- Team Popup -->
+
+    <section class="TeamPopup">
+      <i class="fa-solid fa-xmark close-btn"></i>
+
+      <div class="Teams">
+        <div class="Teams-Div-1 teams-div">
+          <label for="gs-label">Galatasaray SK</label>
+          <img
+            src="/images/teams/GS-Team.png"
+            id="gs-label"
+            alt="Galatasaray Logo HD"
+          />
+        </div>
+
+        <div class="Teams-Div-2 teams-div">
+          <label for="fb-label">Fenerbahçe SK</label>
+          <img
+            src="/images/teams/FB-Team.png"
+            id="fb-label"
+            alt="Fenerbahçe Logo HD"
+          />
+        </div>
+
+        <div class="Teams-Div-3 teams-div">
+          <label for="bjk-label">Beşiktaş JK</label>
+          <img
+            src="/images/teams/BJK-Team.png"
+            id="bjk-label"
+            alt="Beşiktaş Logo HD"
+          />
+        </div>
+
+        <div class="Teams-Div-4 teams-div">
+          <label for="ts-label">Trabzonspor Sportif</label>
+          <img
+            src="/images/teams/TS-Team.png"
+            id="ts-label"
+            alt="Trabzonspor Logo HD"
+          />
+        </div>
+      </div>
+
+      <h1 class="Subheading">
+        Fanatiği olduğunuz takımı seçin ve kadronuzu kurmaya başlayın!
+      </h1>
+    </section>
+
+    <!-- Theme Popup -->
+    <section class="ThemePopup">
+      <i class="fa-solid fa-xmark close-btn-theme"></i>
+
+      <div class="Themes">
+        <div class="Theme-Div-1 themes-div">
+          <label>Trendyol Süper Lig</label>
+          <img
+            class="trendyol-logo"
+            src="/images/logo/trendyol-logo.png"
+            alt="Galatasaray Logo HD"
+          />
+        </div>
+
+        <div class="Theme-Div-2 themes-div">
+          <label>Champions League</label>
+          <img src="/images/logo/ucl-logo.png" alt="Fenerbahçe Logo HD" />
+        </div>
+
+        <div class="Theme-Div-3 themes-div">
+          <label>Europa League</label>
+          <img src="/images/logo/uel-logo.png" alt="Beşiktaş Logo HD" />
+        </div>
+
+        <div class="Theme-Div-4 themes-div">
+          <label>Conference League</label>
+          <img src="/images/logo/uecl-logo.png" alt="Trabzonspor Logo HD" />
+        </div>
+      </div>
+
+      <h1 class="Subheading">
+        Fanatiği olduğunuz takımı seçin ve kadronuzu kurmaya başlayın!
+      </h1>
+    </section>
+
+    <section class="PlayerPopup">
+      <i class="fa-solid fa-xmark close-btn-player"></i>
+
+      <div class="Players">
+        <div class="Offense">
+          <h3 class="area-heading">Hücumcular</h3>
+        </div>
+        <div class="Midfield">
+          <h3 class="area-heading">Orta Sahalar</h3>
+        </div>
+
+        <div class="Defense">
+          <h3 class="area-heading">Defanslar</h3>
+        </div>
+        <div class="Goalkepper">
+          <h3 class="area-heading">Kaleciler</h3>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/Popup.js"></script>
+    <script src="js/line.js"></script>
+  </body>
+</html>

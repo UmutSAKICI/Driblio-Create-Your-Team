@@ -1,0 +1,232 @@
+main {
+  display: grid;
+  z-index: 800;
+
+  grid-template-columns: 0.7fr 1fr;
+
+  width: 144rem;
+  margin: 3rem auto 0rem auto;
+}
+
+.Team-Name-Heading {
+  text-align: center;
+  font-size: 3.2rem;
+  color: #fff;
+  text-shadow: 1px 1px 15px black;
+}
+
+.field-and-suits {
+  background-image: url("../images/field/field.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 60rem;
+  width: 90rem;
+}
+
+.suits {
+  display: none;
+  justify-content: center;
+  align-items: end;
+
+  height: 100%;
+}
+
+.visibility {
+  display: grid;
+}
+
+.suits .row {
+  display: flex;
+  justify-content: center;
+}
+
+.row:last-child {
+  margin-bottom: 2rem;
+}
+
+.EditableSuit {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0rem 2.2rem;
+}
+
+.suit {
+  width: 10rem;
+  height: 6.5rem;
+}
+
+.suit-number {
+  position: absolute;
+  bottom: 50%;
+
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 2px 2px 3px black;
+}
+
+.suit-name {
+  position: absolute;
+  bottom: -25%;
+
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(to right, #f4ce14 50%, #b43f3f 50%);
+  color: #ffffff;
+  text-shadow: 0.5px 0.5px 5px black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  text-align: center;
+
+  width: 12rem;
+}
+
+/* ####################### */
+/* SETTINGS */
+/* ####################### */
+
+.settings {
+  position: relative;
+  margin-top: 1rem;
+}
+
+.team-settings {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  margin-top: 5rem;
+}
+
+.team-name-div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.team-name-div > label {
+  font-size: 1.3rem;
+  color: #fff;
+  text-shadow: 1px 1px 15px black;
+
+  margin-bottom: 0.5rem;
+  width: 17rem;
+}
+
+.team-name-div > .team-name {
+  padding: 1rem 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  width: 18rem;
+
+  border: none;
+  outline: none;
+
+  transition: all 0.1s;
+}
+
+.team-name-div > .line-change {
+  padding: 1rem 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  width: 18rem !important;
+
+  border: none;
+  outline: none;
+
+  transition: all 0.1s;
+}
+
+.line-change:focus,
+.line-change:active {
+  font-weight: 700;
+  outline: 3px solid #222831;
+}
+
+.btn {
+  padding: 1rem 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  width: 18rem !important;
+
+  color: #fff;
+  font-weight: 600;
+
+  border: none;
+  outline: none;
+
+  transition: all 0.1s;
+}
+
+.save {
+  background-color: green;
+}
+
+.reset {
+  background-color: #a90432;
+}
+
+.btn:hover {
+  font-weight: 700;
+  transform: translateY(-2%);
+}
+
+.btn:active,
+.btn:focus {
+  font-weight: 700;
+  outline: 3px solid #222831;
+
+  transform: translateY(5%);
+}
+
+.team-change {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.team-change-heading {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #fff;
+  text-shadow: 1px 1px 15px black;
+}
+
+.team-change-heading:hover,
+.team-change-heading:focus {
+  cursor: pointer;
+}
+
+.change-team-div-1,
+.change-team-div-2 {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.change-team-logo {
+  width: 10rem;
+}
+
+.change-team-logo:hover,
+.change-team-logo:focus {
+  cursor: pointer;
+}
+
+.theme {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 5%;
+}
+
+.theme > .logo {
+  width: 20rem;
+  height: 20rem;
+}

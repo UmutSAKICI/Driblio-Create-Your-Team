@@ -1,0 +1,16 @@
+header {
+  display: flex;
+  justify-content: start;
+
+  width: 144rem;
+  margin: 0 auto;
+}
+
+header > .header {
+  color: #fff;
+
+  font-size: 5rem;
+  font-weight: 700;
+
+  margin-top: 2rem;
+}

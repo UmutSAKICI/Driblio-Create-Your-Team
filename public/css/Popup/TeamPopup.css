@@ -1,0 +1,98 @@
+.close-btn {
+  position: absolute;
+  right: 5%;
+  top: 10%;
+
+  font-size: 4.6rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #222831;
+
+  transition: all 0.5s;
+}
+
+.close-btn:hover {
+  cursor: pointer;
+  transform: translateY(-5%);
+}
+
+.close-btn:active,
+.close-btn:focus {
+  transform: translateY(5%);
+}
+
+.TeamPopup {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-color: rgb(24, 28, 20, 0.5);
+  backdrop-filter: blur(5px);
+
+  z-index: 999;
+}
+
+.Teams {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 2rem;
+}
+
+.teams-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  background-color: rgb(34, 40, 49, 0.5);
+  padding: 1rem;
+
+  transition: all 0.5s;
+  border-radius: 5%;
+}
+
+.teams-div:hover {
+  cursor: pointer;
+  background-color: rgb(34, 40, 49, 0.7);
+  transform: translateY(-5%);
+}
+
+.teams-div:focus,
+.teams-div:active {
+  background-color: rgb(34, 40, 49, 0.9);
+  transform: translateY(5%);
+}
+
+.teams-div > label {
+  font-size: 1.6rem;
+  color: white;
+}
+
+.teams-div > img {
+  width: 18rem;
+  height: 20rem;
+  object-fit: contain;
+}
+
+.Subheading {
+  color: #fff;
+  font-weight: 500;
+
+  position: absolute;
+  bottom: 20%;
+}
